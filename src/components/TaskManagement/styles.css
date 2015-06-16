@@ -1,3 +1,31 @@
 .Component {
+    background-color: #f2f6f7;
+    padding: 50px 0 0 0;
+}
+
+.Text .Heading {
+    margin-bottom: 25px;
+    padding: 0 40px;
+
+    font-weight: 500;
+}
+
+.Text .Description {
+    line-height: 1.5em;
+    margin-bottom: 35px;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .Iphone {
+        background: url(./images/iPhone-5-White.mobile.png) bottom center no-repeat;
+
+        background-size: contain;
+
+        height: 338px;
+        width: 314px;
+        margin: 0 auto;
+    }
 
 }
