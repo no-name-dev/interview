@@ -1,3 +1,45 @@
 .Component {
+    padding: 50px 40px 0;
+}
 
+.Heading {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.Description {
+    line-height: 1.5em;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .Feature {
+        margin-bottom: 40px;
+    }
+
+    .SmartSearch {
+        background: url(./images/Search-Icon.mobile.png) center bottom no-repeat;
+        width: 37px;
+        height: 37px;
+    }
+
+    .InstantMessaging {
+        background: url(./images/Messaging-Icon.mobile.png) center bottom no-repeat;
+        width: 59px;
+        height: 41px;
+    }
+
+    .FileSharing {
+        background: url(./images/File-Icon.mobile.png) center bottom no-repeat;
+        width: 28px;
+        height: 34px;
+    }
+
+    .SmartSearch,
+    .InstantMessaging,
+    .FileSharing {
+        display: block;
+        background-size: contain;
+    }
 }
