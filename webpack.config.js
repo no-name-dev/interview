@@ -19,7 +19,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
-      { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" }
+      { test: /\.(gif|jpg|png|woff|woff2|eot|ttf|svg)$/, loader: "url-loader?limit=10000" }
     ]
   },
 
