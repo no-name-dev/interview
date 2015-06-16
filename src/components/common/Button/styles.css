@@ -1,0 +1,19 @@
+.Button {
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+.Button {
+    background-color: #2ebcea;
+}
+.Button:hover {
+    background-color: #59cdf2;
+}
+.Button:active {
+    background-color: #0090be;
+    border: none;
+}
+
+.Button {
+    padding: 12px 12px;
+}

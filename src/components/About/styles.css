@@ -1,3 +1,39 @@
 .Component {
+    padding: 50px 0;
+}
+
+.Heading {
+    margin-bottom: 25px;
+    padding: 0 40px;
+
+    font-weight: 500;
+}
+
+.Description {
+    line-height: 1.5em;
+    margin-bottom: 35px;
+    padding: 0 40px;
+}
+
+.Image {
+    width: 269px;
+    height: 156px;
+
+    margin: 0 auto;
+
+    background-size: contain;
+    background-image: url(./images/Macbook.mobile.png);
+}
+
+
+.Button {
+    extends: Button from '../common/Button/styles.css';
+}
+
+@media screen and (max-width: 480px) {
+
+    .Button {
+        display: none;
+    }
 
 }
