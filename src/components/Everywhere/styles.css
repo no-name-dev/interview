@@ -1,3 +1,71 @@
 .Component {
+    padding: 50px 0 0 0;
 
+    color: #ffffff;
+    background-color: #2ebcea;
+}
+
+.Text .Heading {
+    margin-bottom: 25px;
+    padding: 0 40px;
+
+    font-weight: 500;
+}
+
+.Text .Description {
+    line-height: 1.5em;
+    margin-bottom: 35px;
+    padding: 0 40px;
+}
+
+.Targets {
+    padding: 0 0 40px 0;
+    margin: 0;
+
+    overflow: auto;
+}
+
+.TargetList {
+    list-style: none;
+}
+
+.TargetList {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 686px;
+}
+
+
+.Target {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.Target .Mobile,
+.Target .Desktop,
+.Target .Web {
+    height: 243px;
+    width: 182px;
+
+    background: no-repeat bottom center;
+    background-size: contain;
+}
+
+.Target .Mobile {
+    background-image: url(./images/Mobile-Apps.mobile.png);
+}
+
+.Target .Desktop {
+    background-image: url(./images/Desktop-Apps.mobile.png);
+}
+
+.Target .Web {
+    background-image: url(./images/Web-Apps.mobile.png);
+
+}
+
+.Target .Heading,
+.Target .Description {
+    margin: 0;
 }
