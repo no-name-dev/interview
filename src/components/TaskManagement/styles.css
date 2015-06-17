@@ -1,23 +1,50 @@
-.Component {
+.ComponentWrapper {
     background-color: #f2f6f7;
+}
+
+.Component {
     padding: 50px 0 0 0;
 }
 
-.Text .Heading {
+@media screen and (min-width: 481px) {
+    .Component {
+        padding: 0;
+
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.Heading {
     margin-bottom: 25px;
     padding: 0 40px;
 
     font-weight: 500;
 }
 
-.Text .Description {
+.Description {
     line-height: 1.5em;
     margin-bottom: 35px;
     padding: 0 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) {
+    .Heading, .Description {
+        padding: 0;
+    }
 
+    .Text {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .Iphone {
         background: url(./images/iPhone-5-White.mobile.png) bottom center no-repeat;
 
@@ -27,5 +54,17 @@
         width: 314px;
         margin: 0 auto;
     }
+}
 
+@media screen and (min-width: 481px) {
+    .Iphone {
+        background-size: contain;
+
+        width: 381px;
+        height: 581px;
+
+        margin-left: -44px;
+
+        background: url(./images/iPhone-5-White.1280.png);
+    }
 }
