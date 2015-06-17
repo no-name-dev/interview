@@ -1,10 +1,10 @@
-.Component {
-    padding: 50px 0 0 0;
-}
-
 .ComponentWrapper {
     color: #ffffff;
     background-color: #2ebcea;
+}
+
+.Component {
+    padding: 50px 0 0 0;
 }
 
 @media screen and (min-width: 481px) {
@@ -28,6 +28,14 @@
     padding: 0 40px;
 }
 
+@media screen and (min-width: 481px) {
+    .Text {
+        text-align: center;
+        width: 680px;
+        margin: 0 auto;
+    }
+}
+
 .Targets {
     padding: 0 0 40px 0;
     margin: 0;
@@ -46,10 +54,21 @@
     min-width: 686px;
 }
 
+@media screen and (min-width: 481px) {
+    .TargetList {
+        justify-content: center;
+    }
+}
 
 .Target {
     text-align: center;
     padding: 15px 15px;
+}
+
+@media screen and (min-width: 481px) {
+    .Target {
+        padding: 0 50px;
+    }
 }
 
 .Target .Mobile,
@@ -72,10 +91,39 @@
 
 .Target .Web {
     background-image: url(./images/Web-Apps.mobile.png);
+}
+
+@media screen and (min-width: 481px) {
+
+    .Target .Mobile,
+    .Target .Desktop,
+    .Target .Web {
+        height: 206px;
+        width: 243px;
+    }
+    
+    .Target .Mobile {
+        background-image: url(./images/Mobile-Apps.1280.png);
+    }
+
+    .Target .Desktop {
+        background-image: url(./images/Desktop-Apps.1280.png);
+    }
+
+    .Target .Web {
+        background-image: url(./images/Web-Apps.1280.png);
+    }
 
 }
 
 .Target .Heading,
 .Target .Description {
     margin: 0;
+}
+
+@media screen and (min-width: 481px) {
+
+    .Target .Heading {
+        margin-top: 50px;
+    }
 }

@@ -5,7 +5,7 @@ import styles from  './styles.css';
 export default class Everywhere extends Component {
     render () {
         return (
-            <div className="ComponentWrapper">
+            <div className={styles.ComponentWrapper}>
                 <section id="everywhere" className={styles.Component}>
                     <div className={styles.Text}>
                         <h2 className={styles.Heading}>
