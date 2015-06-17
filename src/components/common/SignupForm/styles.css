@@ -1,6 +1,7 @@
 .Input {
     width: 250px;
 }
+
 .Input {
     border: none;
 
@@ -20,15 +21,12 @@
     color: #ff6666;
 }
 
-
 .Button {
-
     extends: Button from '../Button/styles.css';
 
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-
 
 .Success {
 
@@ -41,12 +39,15 @@
 .Facebook, .Twitter {
     extends: Button from '../Button/styles.css';
 }
+
 .Facebook {
     background-color: #3563e7;
 }
+
 .Twitter {
     background-color: #25b3f3;
 }
+
 @media screen and (max-width: 480px) {
     .Facebook, .Twitter {
         width: 160px;
