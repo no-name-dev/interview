@@ -11,6 +11,16 @@
     padding: 12px 12px;
 }
 
+.Input:focus {
+    background: transparent;
+    color: #ffffff;
+}
+
+.Input:invalid {
+    color: #ff6666;
+}
+
+
 .Button {
 
     extends: Button from '../Button/styles.css';
