@@ -28,3 +28,43 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+
+.Success {
+
+}
+
+.Share {
+
+}
+
+.Facebook, .Twitter {
+    extends: Button from '../Button/styles.css';
+}
+.Facebook {
+    background-color: #3563e7;
+}
+.Twitter {
+    background-color: #25b3f3;
+}
+@media screen and (max-width: 480px) {
+    .Facebook, .Twitter {
+        width: 160px;
+        height: 50px;
+        margin: 0 4px;
+        font-size: 0.9em;
+    }
+}
+
+.Text {
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.6;
+
+    margin-top: 10px;
+}
+
+.Text p {
+    margin: 0;
+    line-height: 1.5em;
+}

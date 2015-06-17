@@ -4,7 +4,7 @@ import styles from  './styles.css';
 
 import SignUpForm from '../common/SignUpForm';
 
-export default class Header extends Component {
+class Header extends Component {
     render () {
         return (
             <section id="header" className={styles.Component}>
@@ -19,7 +19,10 @@ export default class Header extends Component {
                             Posli, advanced team messaging with to-do functionality.
                         </h1>
                     </div>
-                    <SignUpForm />
+                    <SignUpForm
+                        registerEmail={this.props.registerEmail}
+                        registered={this.props.registered}
+                        />
                 </div>
                 <nav className={styles.Navigation}>
                     <ul className={styles.NavigationItems}>
@@ -32,3 +35,10 @@ export default class Header extends Component {
         );
     }
 }
+
+Header.propTypes = {
+    registered: React.PropTypes.bool.isRequired,
+        registerEmail: React.PropTypes.func.isRequired
+};
+
+export default Header;

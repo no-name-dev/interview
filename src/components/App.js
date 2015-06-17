@@ -10,16 +10,36 @@ import SignUp from './SignUp';
 import TaskManagement from './TaskManagement';
 
 export default class App extends Component {
-	render () {
-		return (
-			<div className={styles.App}>
-				<Header />
-				<About />
-				<Everywhere />
-				<TaskManagement />
-				<Features />
-				<SignUp />
-			</div>
-		);
-	}
+
+    constructor () {
+        super();
+        this.state = {
+            registered: false
+        }
+    }
+
+    registerEmail () {
+        this.setState({
+            registered: true
+        });
+    }
+
+    render () {
+        return (
+            <div className={styles.App}>
+                <Header
+                    registerEmail={this.registerEmail.bind(this)}
+                    registered={this.state.registered}
+                    />
+                <About />
+                <Everywhere />
+                <TaskManagement />
+                <Features />
+                <SignUp
+                    registerEmail={this.registerEmail.bind(this)}
+                    registered={this.state.registered}
+                    />
+            </div>
+        );
+    }
 }
