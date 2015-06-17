@@ -2,9 +2,26 @@
     padding: 50px 0;
 }
 
+@media screen and (min-width: 481px) {
+    .Component {
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .ComponentWrapper {
+        padding: 50px 0;
+        background-size: contain;
+        background: url(./images/Macbook.1280.png) right center no-repeat;
+    }
+}
+
+.Heading, .Description {
+    padding: 0;
+}
+
 .Heading {
     margin-bottom: 25px;
-    padding: 0 40px;
 
     font-weight: 500;
 }
@@ -12,19 +29,36 @@
 .Description {
     line-height: 1.5em;
     margin-bottom: 35px;
-    padding: 0 40px;
 }
 
-.Image {
-    width: 269px;
-    height: 156px;
+@media screen and (min-width: 481px) {
+    .Text {
+        width: 450px;
+    }
 
-    margin: 0 auto;
-
-    background-size: contain;
-    background-image: url(./images/Macbook.mobile.png);
+    .Heading, .Description {
+        padding: 0;
+    }
 }
 
+@media screen and (max-width: 480px) {
+    .Image {
+        width: 269px;
+        height: 156px;
+
+        margin: 0 auto;
+
+        background-size: contain;
+        background-image: url(./images/Macbook.mobile.png);
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .Image {
+        width: 269px;
+        height: 156px;
+    }
+}
 
 .Button {
     extends: Button from '../common/Button/styles.css';
