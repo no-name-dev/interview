@@ -1,3 +1,96 @@
 .Component {
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Component {
+    background-color: #243139;
+    color: #ffffff;
+}
+
+.Heading {
+    font-weight: 500;
+}
+
+.Description {
+    margin-bottom: 40px;
+    line-height: 1.5em;
+}
+
+.Text, .Share {
+    padding: 0 40px;
+}
+
+
+.Share,
+.Form {
+    align-self: center;
+}
+
+.Form {
+    margin-bottom: 30px;
+}
+
+.Share .Text {
+    font-weight: 300;
+}
+
+.Share .Text {
+    padding: 0;
+}
+
+
+.Share .SocialServices {
+    display: inline;
+}
+
+.Service {
+    display: inline
+}
+
+.Service button {
+    /*extends: Button from '../common/Button/styles.css';*/
+
+    border: none;
+    text-indent: -9999px;
+
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .Facebook {
+        background-image: url(./images/Facebook-Normal.mobile.png);
+    }
+
+    .Facebook:hover {
+        background-image: url(./images/Facebook-Hover.mobile.png);
+    }
+
+    .Twitter {
+        background-image: url(./images/Twitter-Normal.mobile.png);
+    }
+
+    .Twitter:hover {
+        background-image: url(./images/Twitter-Hover.mobile.png);
+    }
+
+
+    .Facebook, .Twitter {
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        background-size: contain;
+
+    }
 
 }
+
