@@ -17,3 +17,9 @@
 .Button {
     padding: 12px 12px;
 }
+
+@media screen and (min-width: 481px) {
+    .Button {
+        padding: 15px 32px;
+    }
+}

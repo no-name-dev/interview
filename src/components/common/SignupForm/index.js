@@ -52,12 +52,7 @@ const SingUpForm = React.createClass({
                         <button className={styles.Twitter}>Share on Twitter</button>
                     </div>
                     <div className={styles.Text}>
-                        <p>
-                            You've signed up, we love you for that!
-                        </p>
-                        <p>
-                            Tell your friends about it.
-                        </p>
+                            You've signed up, we love you for that! Tell your friends about it.
                     </div>
                 </div>
             );

@@ -1,7 +1,11 @@
 .Input {
     width: 250px;
 }
-
+@media screen and (min-width: 480px) {
+    .Input {
+        width: 280px;
+    }
+}
 .Input {
     border: none;
 
@@ -12,9 +16,22 @@
     padding: 12px 12px;
 }
 
+@media screen and (min-width: 481px) {
+    .Input {
+        padding: 15px 32px;
+    }
+}
+
 .Input:focus {
     background: transparent;
     color: #ffffff;
+}
+
+@media screen and (min-width: 481px) {
+    .Input:focus {
+        background: #ffffff;
+        color: #414547;
+    }
 }
 
 .Input:invalid {
@@ -29,11 +46,17 @@
 }
 
 .Success {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Share {
 
+@media screen and (min-width: 481px) {
+    .Success {
+        flex-direction: column-reverse;
+        margin-top: -15px;
+    }
 }
 
 .Facebook, .Twitter {
@@ -47,14 +70,11 @@
 .Twitter {
     background-color: #25b3f3;
 }
-
-@media screen and (max-width: 480px) {
-    .Facebook, .Twitter {
-        width: 160px;
-        height: 50px;
-        margin: 0 4px;
-        font-size: 0.9em;
-    }
+.Facebook, .Twitter {
+    width: 190px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 14px;
 }
 
 .Text {
@@ -64,8 +84,8 @@
 
     margin-top: 10px;
 }
-
-.Text p {
-    margin: 0;
-    line-height: 1.5em;
+@media screen and (min-width: 481px) {
+    .Text {
+        margin: 5px 0;
+    }
 }
