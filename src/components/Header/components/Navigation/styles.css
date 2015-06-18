@@ -1,0 +1,87 @@
+.Navigation {
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.7);
+    color: #ffffff;
+    line-height: 62px;
+}
+
+.Logo {
+    display: none;
+}
+
+@media screen and (min-width: 481px) {
+    .Navigation {
+        line-height: 70px;
+    }
+
+    .Sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 1000;
+    }
+
+    .Sticky {
+        background-color: #232323;
+    }
+    .Sticky .NavigationItems {
+        width: 960px;
+        margin: 0 auto;
+
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .Sticky .Logo {
+        display: block;
+
+        position: absolute;
+        left: 0;
+
+        background: url(./images/Logo.sticky.png) left center no-repeat;
+        text-indent: 45px;
+        color: #ffffff;
+        text-transform: uppercase
+    }
+}
+
+.NavigationItems {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 481px) {
+    .NavigationItems {
+        justify-content: center;
+    }
+}
+
+.NavigationItem {
+    text-align: center;
+    border-bottom: transparent solid 4px;
+}
+
+@media screen and (max-width: 480px) {
+    .NavigationItem {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .NavigationItem {
+        padding: 0 40px;
+    }
+}
+
+.NavigationItem a {
+    display: block;
+}
+
+.NavigationItem:hover {
+    border-bottom-color: #2ebcea;
+}

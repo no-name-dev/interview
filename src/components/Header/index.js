@@ -3,11 +3,12 @@ import React, {Component} from 'react';
 import styles from  './styles.css';
 
 import SignUpForm from '../common/SignUpForm';
+import Navigation from './components/Navigation';
 
 class Header extends Component {
     render () {
         return (
-            <section id="header" className={styles.Component}>
+            <header id="header" className={styles.Component}>
                 <div className={styles.Content}>
                     <div className={styles.Logo}>
                         <a href="/" title="Return to home page.">
@@ -24,14 +25,8 @@ class Header extends Component {
                         registered={this.props.registered}
                         />
                 </div>
-                <nav className={styles.Navigation}>
-                    <ul className={styles.NavigationItems}>
-                        <li className={styles.NavigationItem}><a href="#about">About</a></li>
-                        <li className={styles.NavigationItem}><a href="#features">Features</a></li>
-                        <li className={styles.NavigationItem}><a href="#sign_up">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </section>
+                <Navigation />
+            </header>
         );
     }
 }
