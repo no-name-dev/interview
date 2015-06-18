@@ -11,7 +11,7 @@
 
     .ComponentWrapper {
         padding: 50px 0;
-        background-size: contain;
+        background-size: 649px 439px;
         background-repeat: no-repeat;
         background-position: right center;
         background-image: url(./images/Macbook.1280.png);
@@ -26,6 +26,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
         background-size: 649px 439px;
     }
 }
+
 
 .Heading, .Description {
     padding: 0;
@@ -70,6 +71,29 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
         height: 156px;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    .ComponentWrapper {
+        background: none;
+    }
+    
+    .Component {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .Image {
+        width: 754px;
+        height: 439px;
+        
+        margin-left: 30px;
+
+        background: url(./images/Macbook.2560.png) center center no-repeat;
+        background-size: contain;
+    }
+}
+
 
 .Button {
     extends: Button from '../common/Button/styles.css';

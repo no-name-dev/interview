@@ -17,6 +17,14 @@
     align-items: center;
 }
 
+
+@media screen and (max-width: 480px) {
+    .Component {
+        height: 568px;
+        background-image: url(./images/Background.mobile.png);
+    }
+}
+
 @media screen and (min-width: 481px) {
 
     .Component {
@@ -26,8 +34,6 @@
 
 }
 
-
-
 @media screen and (min-width: 481px)
     and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
         .Component {
@@ -35,11 +41,10 @@
         }
     }
 
-@media screen and (max-width: 480px) {
-    .Component {
-        height: 568px;
-        background-image: url(./images/Background.mobile.png);
-    }
+@media screen and (min-width: 2560px) {
+        .Component {
+            background-image: url(./images/Background.2560.png);
+        }
 }
 
 .Logo {
@@ -70,6 +75,14 @@
             background-image: url(./images/Logo.1280.2x.png);
         }
     }
+
+@media screen and (min-width: 2560px) {
+   .Logo {
+       width: 157px;
+       height: 171px;
+        background-image: url(./images/Logo.2560.png);
+    }
+ }
 
 .Text {
     color: #ffffff;
