@@ -123,8 +123,6 @@
         order: 3;
     }
 
-
-
     .Facebook {
         background-image: url(./images/Facebook-Normal.mobile.png);
     }
@@ -150,6 +148,25 @@
         background-size: contain;
 
     }
-
-
 }
+
+
+@media screen and (min-width: 481px)
+    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+        
+        .Facebook {
+            background-image: url(./images/Facebook-Normal.1280.2x.png);
+        }
+
+        .Facebook:hover {
+            background-image: url(./images/Facebook-Hover.1280.2x.png);
+        }
+
+        .Twitter {
+            background-image: url(./images/Twitter-Normal.1280.2x.png);
+        }
+
+        .Twitter:hover {
+            background-image: url(./images/Twitter-Hover.1280.2x.png);
+        }
+    }

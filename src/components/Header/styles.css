@@ -26,6 +26,15 @@
 
 }
 
+
+
+@media screen and (min-width: 481px)
+    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+        .Component {
+            background-image: url(./images/Background.1280.2x.png);
+        }
+    }
+
 @media screen and (max-width: 480px) {
     .Component {
         height: 568px;
@@ -55,6 +64,13 @@
     }
 }
 
+@media screen and (min-width: 481px)
+    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+        .Logo {
+            background-image: url(./images/Logo.1280.2x.png);
+        }
+    }
+
 .Text {
     color: #ffffff;
     text-align: center;
@@ -70,7 +86,6 @@
 @media screen and (min-width: 481px) {
     .Heading {
         font-size: 28px;
-
         width: 432px;
         margin: 30px 0;
     }

@@ -37,7 +37,7 @@
 }
 
 .Targets {
-    padding: 0 0 40px 0;
+    padding: 0 0 124px 0;
     margin: 0;
 }
 
@@ -118,6 +118,23 @@
         background-image: url(./images/Web-Apps.1280.png);
     }
 
+}
+
+
+@media screen and (min-width: 481px)
+    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+    
+     .Target .Mobile {
+         background-image: url(./images/Mobile-Apps.1280.2x.png);
+    }
+
+    .Target .Desktop {
+        background-image: url(./images/Desktop-Apps.1280.2x.png);
+    }
+
+    .Target .Web {
+        background-image: url(./images/Web-Apps.1280.2x.png);
+    }
 }
 
 .Target .Heading,

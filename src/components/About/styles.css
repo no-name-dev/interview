@@ -12,7 +12,18 @@
     .ComponentWrapper {
         padding: 50px 0;
         background-size: contain;
-        background: url(./images/Macbook.1280.png) right center no-repeat;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-image: url(./images/Macbook.1280.png);
+    }
+}
+
+@media screen and (min-width: 481px)
+and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2)
+{
+    .ComponentWrapper {
+        background-image: url(./images/Macbook.1280.2x.png);
+        background-size: 649px 439px;
     }
 }
 
