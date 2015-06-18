@@ -9,11 +9,12 @@ class SignUp extends Component {
         return (
             <section id="sign_up" className={styles.Component}>
                 <h2 className={styles.Heading}>Sign up for beta</h2>
-
-                <div className={styles.Description}>
-                    Sign Up for beta right now and be one of the firsts. With Posli you fix your
-                    workflow and become more efficient.
-                </div>
+                {
+                    this.props.registered ? null : <div className={styles.Description}>
+                        Sign Up for beta right now and be one of the firsts. With Posli you fix your
+                        workflow and become more efficient.
+                    </div>
+                }
                 <div className={styles.Form}>
                     <SignUpForm
                         registerEmail={this.props.registerEmail}
