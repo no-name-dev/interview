@@ -78,6 +78,11 @@
     margin: 0 5px;
     font-size: 14px;
 }
+@media screen and (min-width: 1280px) {
+    .Facebook, .Twitter {
+        width: 200px;
+    }
+}
 
 .Text {
     color: #ffffff;

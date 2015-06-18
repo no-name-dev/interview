@@ -32,6 +32,12 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     padding: 0;
 }
 
+@media screen and (max-width: 1279px) {
+    .Heading, .Description {
+        padding: 0 40px;
+    }
+}
+
 .Heading {
     margin-bottom: 25px;
 
@@ -54,6 +60,10 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
 }
 
 @media screen and (max-width: 1279px) {
+    .ComponentWrapper {
+        background: none;
+    }
+
     .Image {
         width: 269px;
         height: 156px;
@@ -100,9 +110,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
 }
 
 @media screen and (max-width: 1279px) {
-
     .Button {
         display: none;
     }
-
 }

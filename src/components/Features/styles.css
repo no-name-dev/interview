@@ -17,6 +17,15 @@
         margin-bottom: 40px;
     }
 
+    .SmartSearch,
+    .InstantMessaging,
+    .FileSharing {
+        display: block;
+
+        background: no-repeat center bottom;
+        background-size: contain;
+    }
+
     .SmartSearch {
         background-image: url(./images/Search-Icon.mobile.png);
         width: 37px;
@@ -36,14 +45,6 @@
         height: 34px;
     }
 
-    .SmartSearch,
-    .InstantMessaging,
-    .FileSharing {
-        display: block;
-
-        background-size: contain;
-        background: no-repeat center bottom;
-    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -65,19 +66,7 @@
     .Feature {
         padding: 0 40px;
     }
-
-    .SmartSearch {
-        background-image: url(./images/Search-Icon.mobile.png);
-    }
-
-    .InstantMessaging {
-        background-image: url(./images/Messaging-Icon.mobile.png);
-    }
-
-    .FileSharing {
-        background-image: url(./images/File-Icon.mobile.png);
-    }
-
+    
     .SmartSearch,
     .InstantMessaging,
     .FileSharing {
@@ -91,10 +80,22 @@
         margin-bottom: 60px;
     }
 
+    .SmartSearch {
+        background-image: url(./images/Search-Icon.mobile.png);
+    }
+
+    .InstantMessaging {
+        background-image: url(./images/Messaging-Icon.mobile.png);
+    }
+
+    .FileSharing {
+        background-image: url(./images/File-Icon.mobile.png);
+    }
+    
 }
 
 @media screen and (min-width: 1280px)
-and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+and ((min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2)) {
 
     .SmartSearch {
         background-image: url(./images/Search-Icon.1280.2x.png);

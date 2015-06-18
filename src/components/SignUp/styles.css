@@ -63,6 +63,9 @@
 }
 
 @media screen and (max-width: 1279px) {
+    .Heading, .Description {
+        padding: 0 40px;
+    }
 
     .Facebook {
         background-image: url(./images/Facebook-Normal.mobile.png);
@@ -149,7 +152,7 @@
 }
 
 @media screen and (min-width: 1280px)
-and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+and ((min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2)) {
 
     .Facebook {
         background-image: url(./images/Facebook-Normal.1280.2x.png);
