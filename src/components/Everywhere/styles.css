@@ -7,7 +7,7 @@
     padding: 50px 0 0 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Component {
         position: relative;
         width: 960px;
@@ -28,7 +28,7 @@
     padding: 0 40px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Text {
         text-align: center;
         width: 680px;
@@ -41,7 +41,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Targets {
         overflow: auto;
     }
@@ -58,7 +58,7 @@
     min-width: 686px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .TargetList {
         justify-content: center;
     }
@@ -69,7 +69,7 @@
     padding: 15px 15px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Target {
         padding: 0 50px;
     }
@@ -97,7 +97,7 @@
     background-image: url(./images/Web-Apps.mobile.png);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
 
     .Target .Mobile,
     .Target .Desktop,
@@ -120,7 +120,7 @@
 
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
 
     .Target .Mobile {
@@ -141,7 +141,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     margin: 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
 
     .Target .Heading {
         margin-top: 50px;

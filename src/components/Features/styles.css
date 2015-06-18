@@ -11,7 +11,7 @@
     line-height: 1.5em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
 
     .Feature {
         margin-bottom: 40px;
@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
 
     .Component {
         text-align: center;
@@ -93,7 +93,7 @@
 
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
 
     .SmartSearch {

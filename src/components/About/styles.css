@@ -2,7 +2,7 @@
     padding: 50px 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Component {
         position: relative;
         width: 960px;
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2)
 {
     .ComponentWrapper {
@@ -43,7 +43,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     margin-bottom: 35px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Text {
         width: 450px;
     }
@@ -53,7 +53,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Image {
         width: 269px;
         height: 156px;
@@ -65,7 +65,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Image {
         width: 269px;
         height: 156px;
@@ -76,17 +76,17 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     .ComponentWrapper {
         background: none;
     }
-    
+
     .Component {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    
+
     .Image {
         width: 754px;
         height: 439px;
-        
+
         margin-left: 30px;
 
         background: url(./images/Macbook.2560.png) center center no-repeat;
@@ -99,7 +99,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     extends: Button from '../common/Button/styles.css';
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
 
     .Button {
         display: none;

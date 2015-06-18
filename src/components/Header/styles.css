@@ -17,14 +17,14 @@
     align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Component {
         height: 568px;
         background-image: url(./images/Background.mobile.png);
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
 
     .Component {
         height: 650px;
@@ -33,7 +33,7 @@
 
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
     .Component {
         background-image: url(./images/Background.1280.2x.png);
@@ -51,7 +51,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     background-size: cover;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Logo {
         width: 90px;
         height: 97px;
@@ -60,7 +60,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Logo {
         width: 124px;
         height: 135px;
@@ -68,7 +68,7 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     }
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
     .Logo {
         background-image: url(./images/Logo.1280.2x.png);
@@ -88,14 +88,14 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Heading {
         font-size: 1.8em;
         margin: 30px 0;
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Heading {
         font-size: 28px;
         width: 432px;

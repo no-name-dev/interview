@@ -18,7 +18,7 @@
     padding: 12px 12px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Input {
         padding: 15px 32px;
     }
@@ -29,7 +29,7 @@
     color: #ffffff;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Input:focus {
         background: #ffffff;
         color: #414547;
@@ -53,7 +53,7 @@
     align-items: center;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Success {
         flex-direction: column-reverse;
         margin-top: -15px;
@@ -87,7 +87,7 @@
     margin-top: 10px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Text {
         margin: 5px 0;
     }

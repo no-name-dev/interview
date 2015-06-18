@@ -6,7 +6,7 @@
     padding: 50px 0 0 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Component {
         padding: 0;
 
@@ -34,7 +34,7 @@
     padding: 0 40px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Heading, .Description {
         padding: 0;
     }
@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1279px) {
     .Iphone {
         background: url(./images/iPhone-5-White.mobile.png) bottom center no-repeat;
 
@@ -56,7 +56,7 @@
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1280px) {
     .Iphone {
         background-size: contain;
 
@@ -69,7 +69,7 @@
     }
 }
 
-@media screen and (min-width: 481px)
+@media screen and (min-width: 1280px)
 and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
 
     .Iphone {
