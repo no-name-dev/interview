@@ -7,10 +7,12 @@
     "test": "webpack",
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack"
+    "build": "npm run clean && webpack",
+    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
   },
   "author": "Anonymous <john@doe.com>",
   "devDependencies": {
+    "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
