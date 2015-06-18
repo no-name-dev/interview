@@ -21294,7 +21294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { className: _stylesCss2['default'].Heading },
 	                    'Sign up for beta'
 	                ),
-	                _react2['default'].createElement(
+	                this.props.registered ? null : _react2['default'].createElement(
 	                    'div',
 	                    { className: _stylesCss2['default'].Description },
 	                    'Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.'
