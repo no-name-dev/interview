@@ -19,19 +19,20 @@
     }
 
     .SmartSearch {
-        background: url(./images/Search-Icon.mobile.png) center bottom no-repeat;
+        background-image: url(./images/Search-Icon.mobile.png);
         width: 37px;
         height: 37px;
     }
 
     .InstantMessaging {
-        background: url(./images/Messaging-Icon.mobile.png) center bottom no-repeat;
+        background-image: url(./images/Messaging-Icon.mobile.png);
         width: 59px;
         height: 41px;
     }
 
     .FileSharing {
-        background: url(./images/File-Icon.mobile.png) center bottom no-repeat;
+        background-image: url(./images/File-Icon.mobile.png);
+
         width: 28px;
         height: 34px;
     }
@@ -40,6 +41,57 @@
     .InstantMessaging,
     .FileSharing {
         display: block;
+
         background-size: contain;
+        background: no-repeat center bottom;
     }
+}
+
+
+@media screen and (min-width: 481px) {
+
+    .Component {
+        text-align: center;
+
+        width: 960px;
+        margin: 0 auto;
+
+        padding: 100px 0;
+    }
+
+    .FeatureList {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .Feature {
+        padding: 0 40px;
+    }
+
+
+    .SmartSearch {
+        background-image: url(./images/Search-Icon.mobile.png);
+    }
+
+    .InstantMessaging {
+        background-image: url(./images/Messaging-Icon.mobile.png);
+    }
+
+    .FileSharing {
+        background-image: url(./images/File-Icon.mobile.png);
+    }
+
+    .SmartSearch,
+    .InstantMessaging,
+    .FileSharing {
+        display: block;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        height: 100px;
+        margin-bottom: 60px;
+    }
+
 }
