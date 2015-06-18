@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack"
   },
-  "author": "Peter Lisy <peto.lisy@gmail.com>",
+  "author": "Anonymous <john@doe.com>",
   "devDependencies": {
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
