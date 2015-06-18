@@ -94,3 +94,62 @@
 
 }
 
+@media screen and (min-width: 481px) {
+    .Component {
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding: 100px 0;
+    }
+
+    .Text, .Heading, .Description {
+        padding: 0;
+    }
+
+    .Description {
+        max-width: 620px;
+        margin-bottom: 80px;
+    }
+
+    .Description {
+        order: 2;
+    }
+    .Form {
+        order: 1;
+    }
+    .Share {
+        order: 3;
+    }
+
+
+
+    .Facebook {
+        background-image: url(./images/Facebook-Normal.mobile.png);
+    }
+
+    .Facebook:hover {
+        background-image: url(./images/Facebook-Hover.mobile.png);
+    }
+
+    .Twitter {
+        background-image: url(./images/Twitter-Normal.mobile.png);
+    }
+
+    .Twitter:hover {
+        background-image: url(./images/Twitter-Hover.mobile.png);
+    }
+
+
+    .Facebook, .Twitter {
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        background-size: contain;
+
+    }
+
+
+}

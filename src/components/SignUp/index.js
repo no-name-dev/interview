@@ -8,13 +8,11 @@ class SignUp extends Component {
     render () {
         return (
             <section id="sign_up" className={styles.Component}>
-                <div className={styles.Text}>
-                    <h2 className={styles.Heading}>Sign up for beta</h2>
+                <h2 className={styles.Heading}>Sign up for beta</h2>
 
-                    <div className={styles.Description}>
-                        Sign Up for beta right now and be one of the firsts. With Posli you fix your
-                        workflow and become more efficient.
-                    </div>
+                <div className={styles.Description}>
+                    Sign Up for beta right now and be one of the firsts. With Posli you fix your
+                    workflow and become more efficient.
                 </div>
                 <div className={styles.Form}>
                     <SignUpForm
