@@ -21,7 +21,7 @@ class SignUp extends Component {
                         />
                 </div>
                 {
-                    this.props.registered ? null:
+                    this.props.registered ? null :
                         <div className={styles.Share}>
                             <span className={styles.Text}>Share on</span>
                             <ul className={styles.SocialServices}>

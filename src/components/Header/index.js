@@ -33,7 +33,7 @@ class Header extends Component {
 
 Header.propTypes = {
     registered: React.PropTypes.bool.isRequired,
-        registerEmail: React.PropTypes.func.isRequired
+    registerEmail: React.PropTypes.func.isRequired
 };
 
 export default Header;

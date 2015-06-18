@@ -69,13 +69,12 @@
     }
 }
 
-
 @media screen and (min-width: 481px)
-    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
-    
-        .Iphone {
-            background: url(./images/iPhone-5-White.1280.2x.png);
-            background-size: contain;
-        }
-    
+and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+
+    .Iphone {
+        background: url(./images/iPhone-5-White.1280.2x.png);
+        background-size: contain;
     }
+
+}

@@ -17,7 +17,6 @@
     align-items: center;
 }
 
-
 @media screen and (max-width: 480px) {
     .Component {
         height: 568px;
@@ -35,16 +34,16 @@
 }
 
 @media screen and (min-width: 481px)
-    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
-        .Component {
-            background-image: url(./images/Background.1280.2x.png);
-        }
+and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+    .Component {
+        background-image: url(./images/Background.1280.2x.png);
     }
+}
 
 @media screen and (min-width: 2560px) {
-        .Component {
-            background-image: url(./images/Background.2560.png);
-        }
+    .Component {
+        background-image: url(./images/Background.2560.png);
+    }
 }
 
 .Logo {
@@ -70,19 +69,19 @@
 }
 
 @media screen and (min-width: 481px)
-    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
-        .Logo {
-            background-image: url(./images/Logo.1280.2x.png);
-        }
+and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+    .Logo {
+        background-image: url(./images/Logo.1280.2x.png);
     }
+}
 
 @media screen and (min-width: 2560px) {
-   .Logo {
-       width: 157px;
-       height: 171px;
+    .Logo {
+        width: 157px;
+        height: 171px;
         background-image: url(./images/Logo.2560.png);
     }
- }
+}
 
 .Text {
     color: #ffffff;

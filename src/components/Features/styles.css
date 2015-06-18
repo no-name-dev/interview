@@ -11,7 +11,6 @@
     line-height: 1.5em;
 }
 
-
 @media screen and (max-width: 480px) {
 
     .Feature {
@@ -47,7 +46,6 @@
     }
 }
 
-
 @media screen and (min-width: 481px) {
 
     .Component {
@@ -67,7 +65,6 @@
     .Feature {
         padding: 0 40px;
     }
-
 
     .SmartSearch {
         background-image: url(./images/Search-Icon.mobile.png);
@@ -96,21 +93,19 @@
 
 }
 
-
-
 @media screen and (min-width: 481px)
-    and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
+and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2) {
 
-        .SmartSearch {
-            background-image: url(./images/Search-Icon.1280.2x.png);
-        }
-
-        .InstantMessaging {
-            background-image: url(./images/Messaging-Icon.1280.2x.png);
-        }
-
-        .FileSharing {
-            background-image: url(./images/File-Icon.1280.2x.png);
-        }
-
+    .SmartSearch {
+        background-image: url(./images/Search-Icon.1280.2x.png);
     }
+
+    .InstantMessaging {
+        background-image: url(./images/Messaging-Icon.1280.2x.png);
+    }
+
+    .FileSharing {
+        background-image: url(./images/File-Icon.1280.2x.png);
+    }
+
+}
