@@ -679,9 +679,13 @@ and (min-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 2), (-moz-device-p
         background: #ffffff;
         color: #414547;
     }
+    .styles__Input___1KRa1 {
+        background: #ffffff;
+        color: #414547;
+    }
 }
 
-.styles__Input___1KRa1:invalid {
+.styles__Input___1KRa1:focus:invalid {
     color: #ff6666;
 }
 
