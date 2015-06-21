@@ -20496,11 +20496,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _SignUp = __webpack_require__(171);
+	var _SignUp = __webpack_require__(172);
 
 	var _SignUp2 = _interopRequireDefault(_SignUp);
 
-	var _TaskManagement = __webpack_require__(173);
+	var _TaskManagement = __webpack_require__(174);
 
 	var _TaskManagement2 = _interopRequireDefault(_TaskManagement);
 
@@ -20709,30 +20709,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	        value: function render() {
 	            return _react2['default'].createElement(
 	                'div',
-	                { className: _stylesCss2['default'].ComponentWrapper },
+	                { id: 'about' },
 	                _react2['default'].createElement(
-	                    'section',
-	                    { id: 'about', className: _stylesCss2['default'].Component },
+	                    'div',
+	                    { className: _stylesCss2['default'].ComponentWrapper },
 	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: _stylesCss2['default'].Text },
+	                        'section',
+	                        { className: _stylesCss2['default'].Component },
 	                        _react2['default'].createElement(
-	                            'h2',
-	                            { className: _stylesCss2['default'].Heading },
-	                            'What is Posli'
+	                            'div',
+	                            { className: _stylesCss2['default'].Text },
+	                            _react2['default'].createElement(
+	                                'h2',
+	                                { className: _stylesCss2['default'].Heading },
+	                                'What is Posli'
+	                            ),
+	                            _react2['default'].createElement(
+	                                'p',
+	                                { className: _stylesCss2['default'].Description },
+	                                'Posli is platform that combines the best of instant messaging and task-list management and improves your everyday workflow with simple but efficient user interface.'
+	                            ),
+	                            _react2['default'].createElement(
+	                                'button',
+	                                { className: _stylesCss2['default'].Button },
+	                                'Get in line'
+	                            )
 	                        ),
-	                        _react2['default'].createElement(
-	                            'p',
-	                            { className: _stylesCss2['default'].Description },
-	                            'Posli is platform that combines the best of instant messaging and task-list management and improves your everyday workflow with simple but efficient user interface.'
-	                        ),
-	                        _react2['default'].createElement(
-	                            'button',
-	                            { className: _stylesCss2['default'].Button },
-	                            'Get in line'
-	                        )
-	                    ),
-	                    _react2['default'].createElement('div', { className: _stylesCss2['default'].Image })
+	                        _react2['default'].createElement('div', { className: _stylesCss2['default'].Image })
+	                    )
 	                )
 	            );
 	        }
@@ -21114,20 +21118,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _stylesCss2 = _interopRequireDefault(_stylesCss);
 
-	function throttle(func, wait) {
-	    wait = wait || 4; // for 60FPS animations
-	    var timeout;
-	    return function () {
-	        var context = this,
-	            args = arguments;
-	        var later = function later() {
-	            timeout = null;
-	            func.apply(context, args);
-	        };
-	        clearTimeout(timeout);
-	        timeout = setTimeout(later, wait);
-	    };
-	}
+	var _easing = __webpack_require__(171);
+
+	var _easing2 = _interopRequireDefault(_easing);
 
 	var Navigation = (function (_Component) {
 	    function Navigation() {
@@ -21144,7 +21137,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.onScroll = throttle(function () {
 	            var node = _react2['default'].findDOMNode(_this);
 	            var pageOffset = window.pageYOffset;
-	            var navOffset = node.parentElement.offsetHeight - node.offsetHeight;
+	            var navOffset = node.parentElement.offsetHeight - node.offsetHeight - 10; //when navigating to about, it should already be sticky
 
 	            console.log('Page offset: ' + pageOffset);
 
@@ -21172,6 +21165,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        value: function componentWillUnmount() {
 
 	            window.removeEventListener('scroll', this.onScroll);
+	        }
+	    }, {
+	        key: 'navigate',
+	        value: function navigate(event) {
+	            event.preventDefault();
+	            var navHeight = document.getElementById('navigation').scrollHeight;
+	            var targetElement = document.querySelector(event.target.hash);
+
+	            var from = window.pageYOffset;
+	            var to = targetElement.offsetTop - navHeight;
+
+	            animate(from, to, 500, _easing2['default'].easeOutCubic, function (y) {
+	                window.scrollTo(0, from + y);
+	            });
+	            setTimeout(function () {
+	                window.location.hash = event.target.hash;
+	            }, 500);
 	        }
 	    }, {
 	        key: 'render',
@@ -21202,7 +21212,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        { className: _stylesCss2['default'].NavigationItem },
 	                        _react2['default'].createElement(
 	                            'a',
-	                            { href: '#about' },
+	                            { href: '#about', onClick: this.navigate },
 	                            'About'
 	                        )
 	                    ),
@@ -21211,7 +21221,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        { className: _stylesCss2['default'].NavigationItem },
 	                        _react2['default'].createElement(
 	                            'a',
-	                            { href: '#features' },
+	                            { href: '#features', onClick: this.navigate },
 	                            'Features'
 	                        )
 	                    ),
@@ -21220,7 +21230,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        { className: _stylesCss2['default'].NavigationItem },
 	                        _react2['default'].createElement(
 	                            'a',
-	                            { href: '#sign_up' },
+	                            { href: '#sign_up', onClick: this.navigate },
 	                            'Sign Up'
 	                        )
 	                    )
@@ -21233,6 +21243,48 @@ return /******/ (function(modules) { // webpackBootstrap
 	})(_react.Component);
 
 	exports['default'] = Navigation;
+
+	function throttle(func, wait) {
+	    wait = wait || 4; // for 60FPS animations
+	    var timeout;
+	    return function () {
+	        var context = this,
+	            args = arguments;
+	        var later = function later() {
+	            timeout = null;
+	            func.apply(context, args);
+	        };
+	        clearTimeout(timeout);
+	        timeout = setTimeout(later, wait);
+	    };
+	}
+
+	function animate(from, to, duration, distributionFunc, apply) {
+
+	    var FRAME_TIME = 16; //ms for 60FPS animations
+	    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (f) {
+	        setTimeout(f, FRAME_TIME);
+	    };
+
+	    var frames = Math.floor(duration / FRAME_TIME);
+	    var valRange = to - from;
+
+	    var frame = 0;
+
+	    function frameAnim() {
+	        if (frame > frames) {
+	            return;
+	        }
+	        frame += 1;
+
+	        var nextVal = Math.floor(distributionFunc(frame / frames) * valRange);
+	        apply(nextVal);
+
+	        requestAnimationFrame(frameAnim);
+	    }
+
+	    frameAnim();
+	}
 	module.exports = exports['default'];
 
 /***/ },
@@ -21244,6 +21296,77 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 171 */
+/***/ function(module, exports) {
+
+	/*
+	 * Easing Functions - inspired from http://gizma.com/easing/
+	 * only considering the t value for the range [0, 1] => [0, 1]
+	 */
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var EasingFunctions = {
+	    // no easing, no acceleration
+	    linear: function linear(t) {
+	        return t;
+	    },
+	    // accelerating from zero velocity
+	    easeInQuad: function easeInQuad(t) {
+	        return t * t;
+	    },
+	    // decelerating to zero velocity
+	    easeOutQuad: function easeOutQuad(t) {
+	        return t * (2 - t);
+	    },
+	    // acceleration until halfway, then deceleration
+	    easeInOutQuad: function easeInOutQuad(t) {
+	        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+	    },
+	    // accelerating from zero velocity
+	    easeInCubic: function easeInCubic(t) {
+	        return t * t * t;
+	    },
+	    // decelerating to zero velocity
+	    easeOutCubic: function easeOutCubic(t) {
+	        return --t * t * t + 1;
+	    },
+	    // acceleration until halfway, then deceleration
+	    easeInOutCubic: function easeInOutCubic(t) {
+	        return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+	    },
+	    // accelerating from zero velocity
+	    easeInQuart: function easeInQuart(t) {
+	        return t * t * t * t;
+	    },
+	    // decelerating to zero velocity
+	    easeOutQuart: function easeOutQuart(t) {
+	        return 1 - --t * t * t * t;
+	    },
+	    // acceleration until halfway, then deceleration
+	    easeInOutQuart: function easeInOutQuart(t) {
+	        return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t;
+	    },
+	    // accelerating from zero velocity
+	    easeInQuint: function easeInQuint(t) {
+	        return t * t * t * t * t;
+	    },
+	    // decelerating to zero velocity
+	    easeOutQuint: function easeOutQuint(t) {
+	        return 1 + --t * t * t * t * t;
+	    },
+	    // acceleration until halfway, then deceleration
+	    easeInOutQuint: function easeInOutQuint(t) {
+	        return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t;
+	    }
+	};
+
+	exports["default"] = EasingFunctions;
+	module.exports = exports["default"];
+
+/***/ },
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21264,7 +21387,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _stylesCss = __webpack_require__(172);
+	var _stylesCss = __webpack_require__(173);
 
 	var _stylesCss2 = _interopRequireDefault(_stylesCss);
 
@@ -21354,14 +21477,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"Component":"styles__Component___wY1Vz","Heading":"styles__Heading___in5HK","Description":"styles__Description___QDkUW","Text":"styles__Text___MLJVb","Share":"styles__Share___YNtcx","Form":"styles__Form___RiLHV","SocialServices":"styles__SocialServices___zD1DS","Service":"styles__Service___1qhSe","Facebook":"styles__Facebook___fSuKx","Twitter":"styles__Twitter___19S4w"};
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21382,7 +21505,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _stylesCss = __webpack_require__(174);
+	var _stylesCss = __webpack_require__(175);
 
 	var _stylesCss2 = _interopRequireDefault(_stylesCss);
 
@@ -21433,7 +21556,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
